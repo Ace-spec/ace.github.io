@@ -15,6 +15,6 @@ p {
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
-b {display:block;
+b {
   font-family:verdana;
   text-align:center;}
