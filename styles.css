@@ -1,19 +1,146 @@
-* {
-  margin:0px;
-  padding:0px;
+*{margin:0;
+padding:0;
+font-family:verdana;
+}
+.main{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url('../image/2.jpg');
+height:100vh;
+background-position: center;
+background-size:cover;
+overflow-x: hidden;
+position:relative;
+color:white;
 }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+.name{color:white;
+padding-left:30%;}
+
+.nav-bar{display: flex;
+padding:40px 120px;
+}
+.nav-logo img{width:135px;}
+
+.nav-links{flex:1;
+}
+.nav-links ul { margin-left: 50px;
+display: inline;}
+
+.nav-links ul li {
+list-style:none;
+display:inline-block;
+padding:8px 25px;
+}
+.nav-links ul a {
+	color:white;
+	text-decoration:none;
+	font-size: 13px;
+}
+.nav-links ul li::after{
+	content:"";
+	width:0%;
+	height:2px;
+	background:yellow;
+	display:block;
+	margin:auto;
+	transition: 0.5s;
+
 }
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+
+.nav-links ul li:hover:after{
+	content:"";
+	width:100%;
+	height:2px;
+	background:yellow;
+	display:block;
+	margin:auto;
 }
-p.b { font-family:verdana;
-  text-align:left;}
+
+.btn{padding:20px, 20px;
+border:0;
+font-weight:bold;
+background:yellow;
+cursor: pointer;
+}
+
+.banner-title{color:white;
+text-align:center;}
+
+.color{color:yellow;}
+
+
+
+
+.main-title{text-align: center;
+	color:white;}
+.index-animation{color:yellow;
+transition:.5s;
+cursor:pointer;}
+.index-animation:hover{font-family:talhoma;
+font-size: 50px;}
+.message{padding: 5%;
+color:#24a19c;}
+
+
+.vertical-bar{height:100%;
+	top:0;
+	left:0;
+	background:#000;
+position:absolute;
+}
+.search-icon{
+height: 60%;
+width:80px;
+}
+
+.search-icon .fa{margin:45px 23px;
+display: block;
+color:#fff;
+font-size: 30px;
+cursor:pointer;}
+
+.social-icon{
+color:#000;
+	height:35%;
+width:80px;
+background:yellow;
+text-align: center;
+padding-top: 27%;
+bottom:0;
+position:absolute;
+}
+
+.social-icon .fa{
+	margin:15px 23px;
+	display:block;
+	padding:8px;
+	border:1px solid #000;
+	border-radius:50%;
+	cursor:pointer;
+	transition:0.2s;
+}
+.social-icon .fa:hover{border-radius: 40%;}
+
+/*.notification{display:flex;
+right:0;
+bottom:0;
+position:absolute;
+justify-content: center;
+background-color: yellow;}*/
+/*"Css for flex card to display extra content on right side of screen"*/
+
+
+@media only screen and (max-width:700px) {
+	
+.vertical-bar 
+{ 
+	display:none;
+};
+.main-title
+{margin:80px,40px;
+}
+
+}
+
+
+
